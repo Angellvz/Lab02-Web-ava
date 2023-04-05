@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>VV INNOVA</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+            <div class="container">
+                <a class="navbar-brand" href="./">Ventura INNOVA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link"  href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="./servicio.html">Servicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <div class="container mt-5">
+        <h1>Contáctanos</h1>
+        <form id="contact-form" method="post" action="confirmacion.html" >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="full-name" class="form-label">Nombres y Apellidos</label>
+                  <input type="text" class="form-control" id="full-name" name="full-name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Teléfono Móvil</label>
+                  <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{9}" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="birthdate" class="form-label">Fecha de Nacimiento</label>
+                  <input type="date" class="form-control" id="birthdate" name="birthdate" max="2005-12-31" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensaje (mínimo 150 caracteres)</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" minlength="150" required></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar Mensaje</button>
+            </div>
+          </form>
+        </div>
+
+
+        <script>
+            // Obtener los valores de los campos del formulario y asignarlos a las variables correspondientes
+            const fullName = document.getElementById("full-name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const birthdate = document.getElementById("birthdate").value;
+            const message = document.getElementById("message").value;
+      
+            // Asignar los valores a los elementos correspondientes en la página de confirmación
+            document.getElementById("full-name-confirmation").textContent = fullName;
+            document.getElementById("email-confirmation").textContent = email;
+            document.getElementById("phone-confirmation").textContent = phone;
+            document.getElementById("birthdate-confirmation").textContent = birthdate;
+            document.getElementById("message-confirmation").textContent = message;
+          </script>
+      
+          <!-- Agregar el enlace a jQuery -->
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <!-- Agregar el enlace a jQuery Validate -->
+          <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+          
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

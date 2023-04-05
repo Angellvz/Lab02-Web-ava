@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>VV INNOVA</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+            <div class="container">
+                <a class="navbar-brand" href="./">Ventura INNOVA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link"  href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="./servicio.html">Servicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Confirmación de solicitud</title>
+            
+        </head>
+        <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="card my-5">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">¡Gracias por contactarnos!</h3>
+                                <p class="card-text text-center">Muy pronto nos pondremos en contacto contigo.</p>
+                                <hr>
+                                <h4 class="card-title">Información de solicitud:</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Nombre:</strong> <span id="full-name-confirmation"></span></li>
+                                    <li class="list-group-item"><strong>Correo electrónico:</strong> <span id="email-confirmation"></span></li>
+                                    <li class="list-group-item"><strong>Teléfono Móvil:</strong> <span id="phone-confirmation"></span></li>
+                                    <li class="list-group-item"><strong>Fecha de nacimiento:</strong> <span id="birthdate-confirmation"></span></li>
+                                    <li class="list-group-item"><strong>Mensaje:</strong> <span id="message-confirmation"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Obtener los datos del formulario desde la URL
+                const urlParams = new URLSearchParams(window.location.search);
+                
+                // Leer los valores de los campos del formulario
+                const fullName = urlParams.get('full-name-confirmation');
+                const email = urlParams.get('email-confirmation');
+                const phone = urlParams.get('phone');
+                const birthdate = urlParams.get('birthdate-confirmation');
+                const message = urlParams.get('message-confirmation');
+                
+                // Mostrar los valores en la página
+                document.getElementById('full-name-confirmation').textContent = fullName;
+                document.getElementById('email-confirmation').textContent = email;
+                document.getElementById('phone-confirmation').textContent = phone;
+                document.getElementById('birthdate-confirmation').textContent = birthdate;
+                document.getElementById('message-confirmation').textContent = message;
+              </script>
+
+                <!-- Agregar el enlace a jQuery -->
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <!-- Agregar el enlace a jQuery Validate -->
+          <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+              
+          
+        </body>
+        </html>
+        
+ 
+        
+
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
